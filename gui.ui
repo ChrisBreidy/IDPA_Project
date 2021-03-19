@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>IDPA_Project_1</class>
+ <widget class="QMainWindow" name="IDPA_Project_1">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>753</width>
+    <height>648</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>IDPA Project 1</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QTextEdit" name="editDistanceTxt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>390</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="browseSeq1">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>550</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+	background-color: red;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: red;
+    font: bold 14px;
+    min-width: 1em;
+    padding: 6px;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Browse Sequence 1</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="editScriptTxt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>440</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>390</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+color: black;
+font: 8pt &quot;Open Sans&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit Distance:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>440</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+color: black;
+font: 8pt &quot;Open Sans&quot;;
+}</string>
+    </property>
+    <property name="text">
+     <string>Edit Script(S1,S2):</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calculateED">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>550</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+	background-color: red;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: red;
+    font: bold 14px;
+    min-width: 1em;
+    padding: 6px;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Calculate ED</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="browseSeq2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>590</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+	background-color: red;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: red;
+    font: bold 14px;
+    min-width: 1em;
+    padding: 6px;
+ }
+</string>
+    </property>
+    <property name="text">
+     <string>Browse Sequence 2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="calculateES">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>590</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+	background-color: red;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: red;
+    font: bold 14px;
+    min-width: 1em;
+    padding: 6px;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Calculate ES</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="patchedSeqTxt">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>490</y>
+      <width>261</width>
+      <height>31</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>490</y>
+      <width>131</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Patched Output Sequence:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="patchSeq1">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>550</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+	background-color: red;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: red;
+    font: bold 14px;
+    min-width: 1em;
+    padding: 6px;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Patch Seq 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="patchSeq2">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>590</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+	color: white;
+	background-color: red;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: red;
+    font: bold 14px;
+    min-width: 1em;
+    padding: 6px;
+ }</string>
+    </property>
+    <property name="text">
+     <string>Patch Seq 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-20</y>
+      <width>761</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>algorithm.png</pixmap>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
